@@ -46,7 +46,7 @@ public class AutoDodge {
 
     private static int[] detectThreat() {
         try {
-            Process p = Runtime.getRuntime().exec("screencap -p /data/local/tmp/sc.png");
+            java.lang.Process p = Runtime.getRuntime().exec("screencap -p /data/local/tmp/sc.png");
             p.waitFor();
 
             Bitmap bmp = BitmapFactory.decodeFile("/data/local/tmp/sc.png");
