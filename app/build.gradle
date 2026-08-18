@@ -3,6 +3,7 @@ plugins {
 }
 
 android {
+    namespace 'com.menu.brawl'
     compileSdk 34
     defaultConfig {
         applicationId "com.menu.brawl"
@@ -12,7 +13,7 @@ android {
         versionName "1.0"
     }
     buildTypes {
-        release { minifyEnabled false }
+        debug { minifyEnabled false }
     }
 }
 
